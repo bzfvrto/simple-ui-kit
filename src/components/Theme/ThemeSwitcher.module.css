@@ -1,0 +1,57 @@
+.container {
+    /* display: none; */
+    border: none;
+    width: 15vw;
+}
+
+.container legend {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.radioInput {
+    display: none;
+}
+
+/* .labelDisplay {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+
+.labelBtnLeft {
+    padding: 2px 5px;
+    border: 1px solid #94a3b8;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.labelBtnMiddle {
+    padding: 2px 5px;
+    border-top: 1px solid #94a3b8;
+    border-bottom: 1px solid #94a3b8;
+}
+
+.labelBtnRight {
+    padding: 2px 5px;
+    border: 1px solid #94a3b8;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.selected {
+    /* background-color: #cbd5e1; */
+    box-shadow: inset 1px 2px 3px #71717a;
+}
+
+.icon {
+    height: 1rem;
+    width: 1rem;
+    /* vertical-align: bottom; */
+}

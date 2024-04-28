@@ -1,0 +1,20 @@
+.container {
+    text-transform: capitalize;
+    /* text-decoration: none; */
+    width: fit-content;
+}
+
+.container > * {
+    padding: 2px 5px;
+    /* border-style: solid;
+    border-color: #e5e7eb;
+    border-top-width: 1px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px; */
+}
+
+.title {
+    font-weight: 600;
+    margin-top: 2rem;
+}
