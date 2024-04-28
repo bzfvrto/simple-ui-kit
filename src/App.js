@@ -87,7 +87,15 @@ function App() {
                     </div>
                 </Main>
                 <Footer>
-                    Build with ❤️‍🔥 during La Capsule Bootcamp in Paris
+                    Build with ❤️‍🔥 at
+                    <a
+                        style={{ padding: "0px 5px" }}
+                        href="https://www.lacapsule.academy/"
+                        target="_blank"
+                    >
+                        La Capsule Bootcamp
+                    </a>
+                    in Paris
                 </Footer>
             </div>
         </ThemeProvider>
