@@ -4,7 +4,7 @@ import style from "./List.module.css";
 
 function List({ title = null, items, decoration = false }) {
     let listItems = items.map((item) => {
-        return <ListItem key={item.name} value={item.value} />;
+        return <ListItem key={item.name} {...item} />;
     });
     let decorationStyle = {
         listStyleType: decoration === false ? "none" : decoration,

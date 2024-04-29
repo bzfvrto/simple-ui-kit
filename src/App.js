@@ -87,15 +87,35 @@ function App() {
                     </div>
                 </Main>
                 <Footer>
-                    Build with ❤️‍🔥 at
-                    <a
-                        style={{ padding: "0px 5px" }}
-                        href="https://www.lacapsule.academy/"
-                        target="_blank"
-                    >
-                        La Capsule Bootcamp
-                    </a>
-                    in Paris
+                    <div slot="closingLine">
+                        Build with ❤️‍🔥 at
+                        <a
+                            style={{ padding: "0px 5px" }}
+                            href="https://www.lacapsule.academy/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            La Capsule Bootcamp
+                        </a>
+                        in Paris
+                    </div>
+                    <div>
+                        <List
+                            title="Contact"
+                            items={[
+                                {
+                                    name: "my github",
+                                    value: "github: bzfvrto",
+                                    href: "https://github.com/bzfvrto",
+                                },
+                                {
+                                    name: "la capsule",
+                                    value: "website: La Capsule",
+                                    href: "https://www.lacapsule.academy",
+                                },
+                            ]}
+                        />
+                    </div>
                 </Footer>
             </div>
         </ThemeProvider>
