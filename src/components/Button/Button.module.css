@@ -1,0 +1,17 @@
+.btn {
+    background-color: transparent;
+    border: 1px solid #d1d5db;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid #9ca3af;
+    box-shadow:  0 0 2px .5px #9ca3af;
+}
+
+.btn:active {
+    border: 1px solid #9ca3af;
+    box-shadow: inset 0 0 2px 1px #9ca3af;
+}

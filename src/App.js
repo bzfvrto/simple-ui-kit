@@ -11,9 +11,17 @@ import Main from "./components/Main/Main";
 import Paragraph from "./components/Paragraph/Paragraph";
 import List from "./components/List/List";
 import Card from "./components/Card/Card";
+import Input from "./components/Input/Input";
+import Button from "./components/Button/Button";
 
 function App() {
     const [themeColor, setThemeColor] = useState("light");
+    let initialListItems = [
+        { name: "first item name", value: "First item" },
+        { name: "second item name", value: "Second item" },
+        { name: "Third item name", value: "Third item" },
+    ];
+    const [listItems, setlistItems] = useState(initialListItems);
     const changeTheme = (color) => {
         console.log("theme will change to ", color);
         setThemeColor(color);
@@ -32,11 +40,6 @@ function App() {
                 ? "black"
                 : "#6d28d9",
     };
-    let listItems = [
-        { name: "first item name", value: "First item" },
-        { name: "second item name", value: "Second item" },
-        { name: "Third item name", value: "Third item" },
-    ];
     return (
         <ThemeProvider value={{ color: themeColor, changeTheme }}>
             <div className="App" style={bckgStyle}>
@@ -84,6 +87,15 @@ function App() {
                             <div slot="subtitle">Card sub title</div>
                             <div>Card content</div>
                         </Card>
+                    </div>
+
+                    <div className="spaceTop">
+                        <Title level={3}>Input</Title>
+                        <Input label="My input" />
+                        <Input type="password" label="My password input" />
+                        <Button type="text" onClick={() => alert("clicked")}>
+                            My button
+                        </Button>
                     </div>
                 </Main>
                 <Footer>
